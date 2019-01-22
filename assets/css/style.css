@@ -19,6 +19,11 @@ img {
   height: auto;
 }
 
+img-a {
+  max-height: 100%;
+  height: auto;
+}
+
 iframe {
   border: 0;
 }
