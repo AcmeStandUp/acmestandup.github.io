@@ -928,7 +928,7 @@ blockquote {
   text-align: center;
   font-weight: 400;
   font-size: 3vw;
-  color: #fff;
+  color: #111;
   margin: 30 30 70px;
   
 }
@@ -1092,6 +1092,7 @@ Hero Slider
 .hero-slider .slides {
   height: 100% !important;
   transition-delay: 1s;
+
 }
 
 .hero-slider .flex-direction-nav a {
@@ -1099,16 +1100,16 @@ Hero Slider
 }
 
 .hero-slider .slides li {
-  background-size: cover;
+  background-size: center;
   background-position: center center;
   background-repeat: no-repeat;
   height: 100% !important;
   width: 100%;
   padding: 0;
   margin: 0;
-  -webkit-background-size: cover;
+  -webkit-background-size: center;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: center;
 }
 
 /* Caption */
