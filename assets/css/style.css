@@ -348,6 +348,13 @@ a,
   padding-top: 140px !important;
 }
 
+.pt-3vw {
+  padding-top: 10vw
+}
+
+.pb-3vw{
+  padding-bottom: 10vw
+}
 .pb-0 {
   padding-bottom: 0 !important;
 }
