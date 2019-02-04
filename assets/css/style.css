@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -12,6 +13,7 @@ body {
   font: 400 12px/1.8 "Open Sans", sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
+
 }
 
 img {
@@ -934,9 +936,9 @@ blockquote {
   letter-spacing: 4px;
   text-align: center;
   font-weight: 400;
-  font-size: 3vw;
-  color: #111;
-  margin: 30 30 70px;
+  font-size: 30px;
+  color: #ffd72c;
+  margin: 0 0 70px;
   
 }
 
@@ -1167,6 +1169,7 @@ Photography Page Slider
   z-index: 11;
 }
 
+
 /* -------------------------------------------------------------------
 General Styles - Owlcarousel
 ------------------------------------------------------------------- */
@@ -1200,6 +1203,31 @@ General Styles - Owlcarousel
   font-size: 14px;
   color: #111;
 }
+
+/*Carousel Srcset*/
+/*
+Removes white gap between slides - chagnge to base color of slide images
+*/
+.carousel {
+  background:#007aeb;
+}
+
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+/* 
+anchors are inline so you need ot make them block to go full width
+*/
+.carousel-item a {
+  display: block;
+  width:100%;
+}
+
+/*Carousel Srcset Ends Here*/
 
 /*--------------------------------------------------------------
 	Preloader
