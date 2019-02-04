@@ -13,7 +13,7 @@
     Favicons
     =============================================
     -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+   <!--  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
@@ -25,7 +25,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png"> -->
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
@@ -60,19 +60,27 @@
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
-      <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page" role="navigation">
+      <!-- <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page" role="navigation"> -->
+      <nav class="navbar navbar-inverse navbar-fixed-top one-page" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" > <img src="assets/images/Logo.png" alt="Acme StandUp" width=120></a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" > <img src="assets/images/Logo.png" alt="Acme StandUp" width=120></a>
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#totop">Home</a></li>
-              <li><a class="section-scroll" href="#contact">Connect</a></li>
+              <li><h4><a style = "color:#FFFF00;"  href="#totop">&nbsp HOME &nbsp &nbsp</a></h4></li>
+              <li><h4><a style = "color:#FFFF00;" class="section-scroll" href="#contact">&nbsp CONNECT &nbsp</a></h4></li>
             </ul>
           </div>
         </div>
       </nav>
+
       <section class="home-section home-full-height bg-dark " id="home" data-background="assets/images/Photos/HeroImage.jpg">
         <div class="titan-caption">
           <div class="caption-content-a">
@@ -87,32 +95,64 @@
 
       
 
-        <section class="module pb-0 pt-0 bg-dark landing-reason parallax-bg" data-background="assets/images/Photos/Travel.jpg" id="knowmore">
-          <div class="container">
+        <section class="module pt-0 pb-0 bg-dark landing-reason " data-background="assets/images/Photos/Travel.jpg" id="knowmore">
+          
             <div class="row">
-              <div class="col-sm-6"><img src="assets/images/Photos/Travel.jpg" alt=""></div>
-              
-              <div class="col-sm-6 col-md-5">
-
-                <h2 class="module-title font-alt align-center mt-80 pt-140">Acme StandUp is a credit card sized, ultra-portable phone and tablet stand for Android and Apple devices.</h2>
-                
+              <div class="col-sm-6 "><img src="assets/images/Photos/Travel.jpg" alt="">
               </div>
+              
+              <div class=" col-sm-6 col-md-5 pt-3vw pb-3vw align-center" >
+
+                <h3 class="module-title font-alt  align-center pt-140 ">Acme StandUp is a credit card sized, ultra-portable phone and tablet stand for Android and Apple devices.</h3>
+              </div>
+              
+            </div>
+          
+        </section>
+
+        <!-- START THE FEATURETTES -->
+
+<!-- 
+        <div class="container marketing">
+          <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+              <img class="featurette-image img-responsive center-block" src="assets/images/Photos/travel.jpg" alt="image">
             </div>
           </div>
-        </section>
-<!-- 
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/y8ev6LNRLOs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- -->
-        <section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/images/Loop.m4v">
-        <div class="video-player" data-property="{videoURL:'https://www.youtube.com/embed/y8ev6LNRLOs', containment:'.home-section', startAt:18, mute:false, autoPlay:false, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
-        <div class="video-controls-box">
-          <div class="container">
-            <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
-          </div>
         </div>
+      <hr class="featurette-divider">
+ -->
+      
+
+        <section class="video-section bg-dark-30" id="video"  >
+          <div align="center" class="embed-responsive embed-responsive-16by9" >
+              <video autoplay loop class="embed-responsive-item ">
+                  <source src="assets/images/Loop720.mp4" type="video/mp4" >
+              </video>
+          </div>
+        </section>
+
+      
         
 
+      <section class="module bg-dark" id="alt-features">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <!-- <h2 class="module-title font-alt">Features</h2> -->
+                <div class="module-title font-alt">Designed to StandUp to your needs.</div>
+              </div>
+            </div>  
+              <div class="alt-services-image align-center "><img style="float: center; padding: 0 6vw 0px 6vw;" src="assets/images/Photos/ProductFeatures.png" alt="Feature Image"></div>
+
+            </div>
+          </div>
       </section>
+
         <section class="module pb-0" id="works">
           <div class="container">
             <div class="row">
@@ -128,98 +168,71 @@
                 <div class="work-image"><img src="assets/images/Photos/Step1.jpg" alt="Portfolio Item"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Remove StandUp form your wallet</h3>
-                </div></a></li>
+                </div></li>
             <li class="work-item marketing photography"> 
                 <div class="work-image"><img src="assets/images/Photos/Step2.jpg" alt="Portfolio Item"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Pull Central arm followed by Base arm</h3>
-                </div></a></li>
+                </div></li>
             <li class="work-item illustration photography">
                 <div class="work-image"><img src="assets/images/Photos/Step3.jpg" alt="Portfolio Item"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Lock Central arm into Base arm using any of the 5 rivets</h3>
-                </div></a></li>
+                </div></li>
             <li class="work-item marketing photography">
                 <div class="work-image"><img src="assets/images/Photos/Step4.jpg" alt="Portfolio Item"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Pull Front Flap</h3>
-                </div></a></li>
+                </div></li>
             <li class="work-item illustration webdesign">
                 <div class="work-image"><img src="assets/images/Photos/Step5.jpg" alt="Portfolio Item"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title">Insert your mobile device and enjoy it hands-free!</h3>
-                </div></a></li>
+                </div></li>
             <li class="work-item marketing webdesign " >
                 
                         <div class="video-box bg-dark" >
-                          <div class="video-box-icon " ><a class="video-pop-up" href="assets/images/How2Use.m4v">
+                          <div class="video-box-icon " ><a class="video-pop-up" href="assets/images/How2Use.mp4">
                             <span class="icon-video"></span></a>
                           </div>  
                           <div class="video-title font-alt">Video Demo</div>
                           <div class="video-subtitle font-alt">A quick demo</div>
                         </div>
                
-                </div></a></li>
+                </li>
           </ul>
         </section>
        
 
-        <section class="module bg-dark id="alt-features">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <!-- <h2 class="module-title font-alt">Features</h2> -->
-                <div class="module-title font-alt">Designed to StandUp to your needs.</div>
-              </div>
-            </div>  
-              <div class="alt-services-image align-center"><img src="assets/images/Photos/ProductFeatures.png" alt="Feature Image"></div>
-
-            </div>
-          </div>
-        </section>
+        
         <hr class="divider-w">
-        <section class="home-section home-full-height photography-page" id="home">
+        <section class="home-section  photography-page" id="home">
         <div class="hero-slider">
           <ul class="slides">
             
             <li class="bg-dark" style="background-image:url(&quot;assets/images/Photos/Work.jpg&quot;);">
-              <div class="container">
-                <div class="image-caption">
-                  <div class="font-alt caption-text"> </div>
-                </div>
-              </div>
+              
             </li>
             <li class="bg-dark" style="background-image:url(&quot;assets/images/Photos/Cook.jpg&quot;);">
-              <div class="container">
-                <div class="image-caption">
-                  <!-- <div class="font-alt caption-text">Stands with you, while cooking</div> -->
-                </div>
-              </div>
+              
             </li>
             <li class="bg-dark" style="background-image:url(&quot;assets/images/Photos/Read.jpg&quot;);">
-              <div class="container">
-                <div class="image-caption">
-                  <!-- <div class="font-alt caption-text">Stands with you, while reading</div> -->
-                </div>
-              </div>
+              
             </li>
             <li class="bg-dark" style="background-image:url(&quot;assets/images/Photos/Leisure.jpg&quot;);">
-              <div class="container">
-                <div class="image-caption">
-                 <!-- <div class="font-alt caption-text">Stands with you, at leisure</div> -->
-                </div>
-              </div>
+              
             </li>
             <li class="bg-dark" style="background-image:url(&quot;assets/images/Photos/Play.jpg&quot;);">
-              <div class="container">
-                <div class="image-caption">
-<!--                   <div class="font-alt caption-text">Stands with you, at leisure</div>-->   
-             </div>
-              </div>
+              
             </li>
             
           </ul>
-        </div>
+
+          
+
+      </section>
+
+       
 
         <section class="module" id="contact" >
           <div class="container">
@@ -257,9 +270,9 @@
                
 
               <div class="col-sm-4 ">
-                <div class="alt-features-item mt-0">
+                <div class="alt-features-item mt-0 mt-xs-60">
                   <div class="alt-features-icon"><span class="icon-map"></span></div>
-                  <h3 class="alt-features-title font-alt">Where to meet</h3>Moraby Gadgetry Pvt Ltd,<br/>206,Tirumala Lotus,<br/>Kembathalli Main Road,<br/>Bengaluru, 560083 
+                  <h3 class="alt-features-title font-alt">Where to meet</h3>Morabi Gadgetry Pvt Ltd,<br/>206,Tirumala Lotus,<br/>Kembathalli Main Road,<br/>Bengaluru, 560083 
                 </div>
                 <div class="alt-features-item mt-xs-60">
                   <div class="alt-features-icon"><span class="icon-megaphone"></span></div>
@@ -281,7 +294,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
-                <p class="copyright font-alt">&copy; 2017&nbsp;<a href="index.html">AcmeStandUp</a>, All Rights Reserved</p>
+                <p class="copyright font-alt">&copy; 2019&nbsp;<a href="index.html">AcmeStandUp</a>, All Rights Reserved</p>
               </div>
               <div class="col-sm-6">
                 <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
