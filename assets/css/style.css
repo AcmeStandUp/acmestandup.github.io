@@ -26,6 +26,9 @@ img-a {
   height: auto;
 }
 
+video { object-fit: fill; }
+
+
 iframe {
   border: 0;
 }
@@ -1890,7 +1893,7 @@ Google map
 --------------------------------------------------------------*/
 .video-box {
   text-align: center;
-  padding: 40px 0;
+  padding: 48px 0;
 }
 
 .video-box-icon > a > i,
